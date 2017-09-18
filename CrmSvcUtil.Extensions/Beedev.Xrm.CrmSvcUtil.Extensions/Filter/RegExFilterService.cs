@@ -38,7 +38,7 @@ namespace Beedev.Xrm.CrmSvcUtil.Extensions.Filter{
     }
 
     private bool DoesMatchSettings(EntityMetadata entityMetadata){
-      bool result = false;
+      bool result = _configuration.Filtering.EntityFilter.Count == 0;
       for (int index = 0; index < _configuration.Filtering.EntityFilter.Count && !result; index++){
         FilterElement filterElement = _configuration.Filtering.EntityFilter[index];
         LogInformation($"Match {filterElement.Name} ({filterElement.Expression}) with entity logical name: {entityMetadata.LogicalName}");

@@ -11,7 +11,6 @@ namespace Beedev.Xrm.CrmSvcUtil.Extensions.Configuration
 
     public static ServiceExtensionsConfigurationSection Create(){
       if (!(ConfigurationManager.GetSection(ServiceExtensionsSectionKey) is ServiceExtensionsConfigurationSection section)){
-        // TODO: create default
         section = new ServiceExtensionsConfigurationSection();
       }
       return section;

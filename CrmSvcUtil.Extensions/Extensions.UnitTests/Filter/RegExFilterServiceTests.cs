@@ -45,5 +45,21 @@ namespace Beedev.Xrm.CrmSvcUtil.Extensions.Filter{
       Assert.IsFalse(filterService.GenerateEntity(new EntityMetadata{LogicalName = "opportunity_detail"}, services));
       Assert.IsTrue(filterService.GenerateEntity(new EntityMetadata{LogicalName = "new_customentity"}, services));
     }
+
+    [TestMethod]
+    public void GenerateWithoutConfigurationTest()
+    {
+      ServiceExtensionsConfigurationSection configuration = new ServiceExtensionsConfigurationSection();
+      configuration.Filtering.EntityFilter.Clear();
+
+      StubICodeWriterFilterService codeWriterFilterService = new StubICodeWriterFilterService { GenerateEntityEntityMetadataIServiceProvider = (metadata, provider) => true };
+      RegExFilterService filterService = new RegExFilterService(codeWriterFilterService, configuration);
+
+      IServiceProvider services = new StubIServiceProvider();
+      Assert.IsTrue(filterService.GenerateEntity(new EntityMetadata { LogicalName = "account" }, services));
+      Assert.IsTrue(filterService.GenerateEntity(new EntityMetadata { LogicalName = "opportunity" }, services));
+      Assert.IsTrue(filterService.GenerateEntity(new EntityMetadata { LogicalName = "opportunity_detail" }, services));
+      Assert.IsTrue(filterService.GenerateEntity(new EntityMetadata { LogicalName = "new_customentity" }, services));
+    }
   }
 }
