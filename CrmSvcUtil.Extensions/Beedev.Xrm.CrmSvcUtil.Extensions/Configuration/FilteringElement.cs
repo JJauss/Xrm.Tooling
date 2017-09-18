@@ -1,7 +1,7 @@
 ﻿using System.Configuration;
 
 namespace Beedev.Xrm.CrmSvcUtil.Extensions.Configuration{
-  public class FilteringElement:ConfigurationElement{
+  internal class FilteringElement:ConfigurationElement{
 
     [ConfigurationProperty("EntityFilter")]
     [ConfigurationCollection(typeof(FilterElementCollection),
@@ -9,9 +9,18 @@ namespace Beedev.Xrm.CrmSvcUtil.Extensions.Configuration{
       ClearItemsName = "clear",
       RemoveItemName = "remove")]
     public FilterElementCollection EntityFilter{
-      get{ return (FilterElementCollection) base["EntityFilter"]; }
-      set{ base["EntityFilter"] = value; }
+      get => (FilterElementCollection) base["EntityFilter"];
+      set => base["EntityFilter"] = value;
     }
 
+    [ConfigurationProperty("AttributeFilter")]
+    [ConfigurationCollection(typeof(AttributeFilterElementCollection),
+      AddItemName = "add",
+      ClearItemsName = "clear",
+      RemoveItemName = "remove")]
+    public AttributeFilterElementCollection AttributeFilter {
+      get => (AttributeFilterElementCollection)base["AttributeFilter"];
+      set => base["AttributeFilter"] = value;
+    }
   }
 }

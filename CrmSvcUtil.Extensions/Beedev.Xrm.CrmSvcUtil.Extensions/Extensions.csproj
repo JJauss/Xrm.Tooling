@@ -65,8 +65,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configuration\AttributeFilterElement.cs" />
     <Compile Include="Configuration\FilterElement.cs" />
     <Compile Include="Configuration\FilterElementCollection.cs" />
+    <Compile Include="Configuration\FilterElementCollectionBase.cs" />
     <Compile Include="Configuration\FilteringElement.cs" />
     <Compile Include="Configuration\IFilter.cs" />
     <Compile Include="Configuration\ServiceExtensionsConfigurationSection.cs" />

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Configuration;
 using System.Configuration.Fakes;
 using Microsoft.QualityTools.Testing.Fakes;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
