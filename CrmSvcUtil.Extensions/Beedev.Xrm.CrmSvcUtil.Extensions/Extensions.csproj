@@ -75,10 +75,7 @@
     <Compile Include="Filter\RegExFilterService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="bin\Debug\" />
-    <Folder Include="bin\Release\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Extensions.nuspec" />
     <None Include="packages.config" />
