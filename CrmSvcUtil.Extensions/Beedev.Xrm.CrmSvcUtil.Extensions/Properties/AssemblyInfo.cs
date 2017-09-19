@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 #if DEBUG
 [assembly: AssemblyConfiguration("Debug")]
 #else
-[assembly: AssemblyConfiguration("Debug")]
+[assembly: AssemblyConfiguration("Release")]
 #endif
 [assembly: AssemblyCompany("be(e) develop Joachim Jauß")]
 [assembly: AssemblyProduct("Beedev.Xrm.CrmSvcUtil.Extensions")]
