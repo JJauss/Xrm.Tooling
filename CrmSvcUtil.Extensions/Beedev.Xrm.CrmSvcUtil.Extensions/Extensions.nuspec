@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Beedevelop.Xrm.Tooling.CrmSvcUtil.Extensions</id>
-    <version>$version$</version>
+    <version>$version$-alpha</version>
     <title>$title$</title>
     <authors>$author$</authors>
     <owners>$author$</owners>
