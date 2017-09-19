@@ -38,6 +38,6 @@ using System.Runtime.InteropServices;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("8.2.0.0")]
 [assembly: AssemblyFileVersion("8.2.0.0")]
-
+[assembly: AssemblyInformationalVersion("1.0.1-alpha")]
 
 [assembly:InternalsVisibleTo("Beedev.Xrm.CrmSvcUtil.Extensions.Tests")] 

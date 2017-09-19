@@ -1,18 +1,23 @@
-<?xml version="1.0"?>
-<package >
-  <metadata>
-    <id>Beedevelop.Xrm.Tooling.CrmSvcUtil.Extensions</id>
-    <version>$version$-alpha</version>
-    <title>$title$</title>
-    <authors>$author$</authors>
-    <owners>$author$</owners>
-    <!--<licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>-->
-    <projectUrl>https://github.com/JJauss/Xrm.Tooling/tree/master/CrmSvcUtil.Extensions</projectUrl>
-    <!--<iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>-->
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>$description$</description>
-    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
-    <copyright>Copyright 2017</copyright>
-    <tags>CrmSdk Xrm CrmSvcUtil</tags>
-  </metadata>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>Beedevelop.Xrm.Tooling.CrmSvcUtil.Extensions</id>
+        <version>8.2.0-alpha</version>
+        <title>Beedev.Xrm.CrmSvcUtil.Extensions</title>
+        <authors>be(e) develop Joachim Jauß</authors>
+        <owners>be(e) develop Joachim Jauß</owners>
+        <projectUrl>https://github.com/JJauss/Xrm.Tooling/tree/master/CrmSvcUtil.Extensions</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>CrmSvcUtl Extensions</description>
+        <releaseNotes />
+        <copyright>Copyright 2017</copyright>
+        <tags>CrmSdk Xrm CrmSvcUtil</tags>
+        <dependencies>
+            <dependency id="Microsoft.CrmSdk.CoreAssemblies" version="8.2.0.2" />
+            <dependency id="Microsoft.CrmSdk.CoreTools" version="8.2.0.5" />
+        </dependencies>
+    </metadata>
+    <!--<files>
+        <file src="bin\coretools\*.*" exclude="*.*" />
+    </files>-->
 </package>
