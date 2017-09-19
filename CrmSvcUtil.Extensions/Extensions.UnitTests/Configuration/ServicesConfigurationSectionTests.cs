@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Configuration.Fakes;
-using Microsoft.QualityTools.Testing.Fakes;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Beedev.Xrm.CrmSvcUtil.Extensions.Configuration
@@ -17,17 +15,17 @@ namespace Beedev.Xrm.CrmSvcUtil.Extensions.Configuration
       }
     }
 
-    [TestMethod]
-    public void CreateWithoutConfiguration()
-    {
-      using (ShimsContext.Create()){
-        ShimConfigurationManager.GetSectionString = s => null;
-        ServiceExtensionsConfigurationSection section = ServiceExtensionsConfigurationSection.Create();
+    //[TestMethod]
+    //public void CreateWithoutConfiguration()
+    //{
+    //  using (ShimsContext.Create()){
+    //    ShimConfigurationManager.GetSectionString = s => null;
+    //    ServiceExtensionsConfigurationSection section = ServiceExtensionsConfigurationSection.Create();
 
-        Assert.AreEqual("default", section.Filtering.EntityFilter[0].Name);
-        Assert.AreEqual(".*", section.Filtering.EntityFilter[0].Expression);
-        Assert.AreEqual(true, section.Filtering.EntityFilter[0].IgnoreCase);
-      }
-    }
+    //    Assert.AreEqual("default", section.Filtering.EntityFilter[0].Name);
+    //    Assert.AreEqual(".*", section.Filtering.EntityFilter[0].Expression);
+    //    Assert.AreEqual(true, section.Filtering.EntityFilter[0].IgnoreCase);
+    //  }
+    //}
   }
 }

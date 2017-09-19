@@ -1,9 +1,9 @@
 ﻿using System;
-using System.Fakes;
 using Beedev.Xrm.CrmSvcUtil.Extensions.Configuration;
-using Microsoft.Crm.Services.Utility.Fakes;
+using Microsoft.Crm.Services.Utility;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Microsoft.Xrm.Sdk.Metadata;
+using Moq;
 using Newtonsoft.Json.Linq;
 
 namespace Beedev.Xrm.CrmSvcUtil.Extensions.Filter{
@@ -32,14 +32,14 @@ namespace Beedev.Xrm.CrmSvcUtil.Extensions.Filter{
       _opportunityTitleMetadata = JObject.Parse("{logicalName:\"title\", entityLogicalName:\"opportunity\"}").ToObject<AttributeMetadata>();
       _opportunityNameMetadata = JObject.Parse("{logicalName:\"name\", entityLogicalName:\"opportunity\"}").ToObject<AttributeMetadata>();
 
-
-      StubICodeWriterFilterService codeWriterFilterService = new StubICodeWriterFilterService
-      {
-        GenerateEntityEntityMetadataIServiceProvider = (metadata, provider) => true,
-        GenerateAttributeAttributeMetadataIServiceProvider = (metadata, provider) => true
-      };
-      _regExFilterService = new RegExFilterService(codeWriterFilterService, _configuration);
-      _serviceProvider = new StubIServiceProvider();
+      MockRepository mockRepository = new MockRepository(MockBehavior.Strict);
+      Mock<ICodeWriterFilterService> codeWriterFilterServiceMock = mockRepository.Create<ICodeWriterFilterService>();
+      codeWriterFilterServiceMock.Setup(_ => _.GenerateEntity(It.IsAny<EntityMetadata>(), It.IsAny<IServiceProvider>()))
+                                 .Returns(true);
+      codeWriterFilterServiceMock.Setup(_ => _.GenerateAttribute(It.IsAny<AttributeMetadata>(), It.IsAny<IServiceProvider>()))
+                                 .Returns(true);
+      _regExFilterService = new RegExFilterService(codeWriterFilterServiceMock.Object, _configuration);
+      _serviceProvider = mockRepository.Create<IServiceProvider>().Object;
     }
 
     [TestMethod]
