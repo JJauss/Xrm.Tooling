@@ -18,6 +18,6 @@
         </dependencies>
     </metadata>
     <files>
-      <file src="bin\$configuration$\Beedev.Xrm.CrmSvcUtil.Extensions.dll" target="bin\coretools\" BuildAction="content" />
+      <file src="bin\$configuration$\Beedev.Xrm.CrmSvcUtil.Extensions.dll" target="contentFiles\bin\coretools\" />
     </files>
 </package>
