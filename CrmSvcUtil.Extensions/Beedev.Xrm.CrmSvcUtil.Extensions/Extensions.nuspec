@@ -17,7 +17,7 @@
             <dependency id="Microsoft.CrmSdk.CoreTools" version="8.2.0.5" />
         </dependencies>
     </metadata>
-    <!--<files>
-        <file src="bin\coretools\*.*" exclude="*.*" />
-    </files>-->
+    <files>
+      <file src="bin\$configuration$\Beedev.Xrm.CrmSvcUtil.Extensions.dll" target="bin\coretools\" />
+    </files>
 </package>

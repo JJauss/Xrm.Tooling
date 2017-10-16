@@ -77,8 +77,11 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <None Include="Extensions.nuspec" />
+    <None Include="Extensions.nuspec">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
+    <None Include="scripts\NugetScripts\install.ps1" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
