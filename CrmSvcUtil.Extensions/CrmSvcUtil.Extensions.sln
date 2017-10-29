@@ -11,9 +11,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions.UnitTests", "Extensions.UnitTests\Extensions.UnitTests.csproj", "{0CA1CEBE-0027-49DD-9F8F-0899400EEFB7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGetRegistraton.Sample", "NuGetRegistraton.Test\NuGetRegistraton.Sample.csproj", "{D961949F-FA09-4828-AEF4-FD1A3082BCBD}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample", "Sample", "{8FFBDAC9-AE83-4165-AB97-004FA800F05F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGetRegistraton.Sample", "NuGetRegistraton.Sample\NuGetRegistraton.Sample.csproj", "{D961949F-FA09-4828-AEF4-FD1A3082BCBD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +32,7 @@ Global
 		{D961949F-FA09-4828-AEF4-FD1A3082BCBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D961949F-FA09-4828-AEF4-FD1A3082BCBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D961949F-FA09-4828-AEF4-FD1A3082BCBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D961949F-FA09-4828-AEF4-FD1A3082BCBD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
