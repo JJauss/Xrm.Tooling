@@ -8,10 +8,17 @@
         <owners>be(e) develop Joachim Jauß</owners>
         <projectUrl>https://github.com/JJauss/Xrm.Tooling/tree/master/CrmSvcUtil.Extensions</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>CrmSvcUtl Extensions</description>
+      <summary>
+        Usefull extensions for CrmSvcUtil.exe to customize the codegeneration process.
+        (For example filter generated entities and attributes, map names to custom ones or handle the publisher prefix as you want.)
+      </summary>
+        <description>
+          The package contains a library which provides some usefull classes, which can be injected in the code generation process of the CrmSvcUtil.exe.
+          The interfaces are documented at https://msdn.microsoft.com/en-us/library/hh547384.aspx
+        </description>
         <releaseNotes />
         <copyright>Copyright 2017</copyright>
-        <tags>CrmSdk Xrm CrmSvcUtil</tags>
+        <tags>Dynamics CRM 2016 SDK XRM CrmSdk Xrm CrmSvcUtil Dynamics365</tags>
         <dependencies>
             <dependency id="Microsoft.CrmSdk.CoreAssemblies" version="8.2.0.2" />
             <dependency id="Microsoft.CrmSdk.CoreTools" version="8.2.0.5" />
