@@ -7,7 +7,7 @@ namespace Beedev.Xrm.CrmSvcUtil.Extensions.Configuration{
       
     }
 
-    public AttributeFilterElement(string name, string entityName, string expression) : base(name, expression){
+    public AttributeFilterElement(string entityName, string expression) : base(expression){
       this.EntityName = entityName;
     }
 

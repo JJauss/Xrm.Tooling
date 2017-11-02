@@ -11,7 +11,7 @@ namespace Beedev.Xrm.CrmSvcUtil.Extensions.Configuration
       ServiceExtensionsConfigurationSection section = ServiceExtensionsConfigurationSection.Create();
 
       foreach (FilterElement filter in section.Filtering.EntityFilter){
-        Console.WriteLine("{0} - {1}", filter.Name, filter.Expression);
+        Console.WriteLine("{0}", filter.Expression);
       }
     }
 

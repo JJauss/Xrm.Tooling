@@ -67,12 +67,12 @@ namespace Beedev.Xrm.CrmSvcUtil.Extensions.Filter{
       bool result = filters.Count == 0;
       for (int index = 0; index < filters.Count && !result; index++){
         FilterElement filterElement = filters[index];
-        LogInformation($"Match {filterElement.Name} ({filterElement.Expression}) with {kind} logical name: {logicalName}");
+        LogInformation($"Match {filterElement.Expression} with {kind} logical name: {logicalName}");
         try{
           RegexOptions options = filterElement.IgnoreCase ? RegexOptions.IgnoreCase : ~ RegexOptions.IgnoreCase;
           Regex regex = new Regex(filterElement.Expression, options);
           bool isMatch = regex.IsMatch(logicalName);
-          LogInformation("{0} {1}",filterElement.Name , isMatch?"matches":"does not match");
+          LogInformation("{0} {1}",filterElement.Expression , isMatch?"matches":"does not match");
           result |= isMatch;
         }
         catch (ArgumentException ex){

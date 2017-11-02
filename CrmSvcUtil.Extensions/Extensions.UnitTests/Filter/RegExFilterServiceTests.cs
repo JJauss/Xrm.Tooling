@@ -20,13 +20,13 @@ namespace Beedev.Xrm.CrmSvcUtil.Extensions.Filter{
     public void TestInitialize(){
       _configuration = new ServiceExtensionsConfigurationSection();
       _configuration.Filtering.EntityFilter.Clear();
-      _configuration.Filtering.EntityFilter.Add(new FilterElement("TestAccount", "^account$"));
-      _configuration.Filtering.EntityFilter.Add(new FilterElement("TestOpportunity", "^opportunity"));
-      _configuration.Filtering.EntityFilter.Add(new FilterElement("TestNew", "^new_.*$"));
+      _configuration.Filtering.EntityFilter.Add(new FilterElement("^account$"));
+      _configuration.Filtering.EntityFilter.Add(new FilterElement("^opportunity"));
+      _configuration.Filtering.EntityFilter.Add(new FilterElement("^new_.*$"));
       _configuration.Filtering.AttributeFilter.Clear();
-      _configuration.Filtering.AttributeFilter.Add(new AttributeFilterElement("TestAccount", "account", "^name$"));
-      _configuration.Filtering.AttributeFilter.Add(new AttributeFilterElement("TestOpportunity", "opportunity", "^title"));
-      _configuration.Filtering.AttributeFilter.Add(new AttributeFilterElement("NewCustom", "new_customentity", "^new_.*$"));
+      _configuration.Filtering.AttributeFilter.Add(new AttributeFilterElement("account", "^name$"));
+      _configuration.Filtering.AttributeFilter.Add(new AttributeFilterElement("opportunity", "^title"));
+      _configuration.Filtering.AttributeFilter.Add(new AttributeFilterElement("new_customentity", "^new_.*$"));
 
       _accountNameMetadata = JObject.Parse("{logicalName:\"name\", entityLogicalName:\"account\"}").ToObject<AttributeMetadata>();
       _opportunityTitleMetadata = JObject.Parse("{logicalName:\"title\", entityLogicalName:\"opportunity\"}").ToObject<AttributeMetadata>();
@@ -55,7 +55,8 @@ namespace Beedev.Xrm.CrmSvcUtil.Extensions.Filter{
 
     [TestMethod]
     public void GenerateWithInvalidExpressionTest(){
-      _configuration.Filtering.EntityFilter.Add(new FilterElement("TestOpportunity", "^\\opportunity"));
+      _configuration.Filtering.EntityFilter.Remove("^opportunity");
+      _configuration.Filtering.EntityFilter.Add(new FilterElement("^\\opportunity"));
       Assert.IsTrue(_regExFilterService.GenerateEntity(new EntityMetadata{LogicalName = "account"}, _serviceProvider));
       Assert.IsFalse(_regExFilterService.GenerateEntity(new EntityMetadata{LogicalName = "opportunity"}, _serviceProvider));
       Assert.IsFalse(_regExFilterService.GenerateEntity(new EntityMetadata{LogicalName = "opportunity_detail"}, _serviceProvider));

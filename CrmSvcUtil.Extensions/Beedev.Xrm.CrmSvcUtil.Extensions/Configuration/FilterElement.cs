@@ -3,23 +3,12 @@
 namespace Beedev.Xrm.CrmSvcUtil.Extensions.Configuration{
   public class FilterElement:ConfigurationElement, IFilter{
     public FilterElement(){
-      Name = "default";
       Expression = ".*";
     }
-    public FilterElement(string name, string expression){
-      Name = name;
+    public FilterElement(string expression){
       Expression = expression;
     }
-
     
-
-    [ConfigurationProperty("name", DefaultValue = "default", IsKey = true, IsRequired = true)]
-    public string Name{
-      get{ return (string) this["name"]; }
-      set{ this["name"] = value; }
-    }
-    
-
     [ConfigurationProperty("expression", IsRequired = true)]
     public string Expression {
       get { return (string)this["expression"]; }

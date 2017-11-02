@@ -16,7 +16,7 @@ namespace Beedev.Xrm.CrmSvcUtil.Extensions.Configuration{
     }
 
     protected override object GetElementKey(ConfigurationElement element){
-      return ((T)element).Name;
+      return ((T)element).Expression;
     }
 
     public T this[int index] {
@@ -50,7 +50,7 @@ namespace Beedev.Xrm.CrmSvcUtil.Extensions.Configuration{
     public void Remove(T element)
     {
       if (BaseIndexOf(element) >= 0)
-        BaseRemove(element.Name);
+        BaseRemove(element.Expression);
     }
 
     public void RemoveAt(int index)
