@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Configuration;
-using System.Linq;
 using System.Diagnostics;
 using System.Text.RegularExpressions;
 using Beedev.Xrm.CrmSvcUtil.Extensions.Configuration;

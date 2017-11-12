@@ -67,12 +67,23 @@ namespace Beedev.Xrm.CrmSvcUtil.Extensions.Filter{
     public void GenerateWithoutConfigurationTest()
     {
       _configuration.Filtering.EntityFilter.Clear();
+      _configuration.Filtering.AttributeFilter.Clear();
       Assert.IsTrue(_regExFilterService.GenerateEntity(new EntityMetadata { LogicalName = "account" }, _serviceProvider));
       Assert.IsTrue(_regExFilterService.GenerateEntity(new EntityMetadata { LogicalName = "opportunity" }, _serviceProvider));
       Assert.IsTrue(_regExFilterService.GenerateEntity(new EntityMetadata { LogicalName = "contact" }, _serviceProvider));
       Assert.IsTrue(_regExFilterService.GenerateEntity(new EntityMetadata { LogicalName = "opportunity_detail" }, _serviceProvider));
       Assert.IsTrue(_regExFilterService.GenerateEntity(new EntityMetadata { LogicalName = "new_customentity" }, _serviceProvider));
       Assert.IsTrue(_regExFilterService.GenerateAttribute(_accountNameMetadata, _serviceProvider));
+      Assert.IsTrue(_regExFilterService.GenerateAttribute(_opportunityTitleMetadata, _serviceProvider));
+    }
+
+    [TestMethod]
+    public void GenerateAttributesForUnconfiguredEntityTest()
+    {
+      _configuration.Filtering.EntityFilter.Clear();
+      _configuration.Filtering.AttributeFilter.Clear();
+      _configuration.Filtering.AttributeFilter.Add(new AttributeFilterElement("account", "^(?!name)$"));
+      Assert.IsFalse(_regExFilterService.GenerateAttribute(_accountNameMetadata, _serviceProvider));
       Assert.IsTrue(_regExFilterService.GenerateAttribute(_opportunityTitleMetadata, _serviceProvider));
     }
   }
