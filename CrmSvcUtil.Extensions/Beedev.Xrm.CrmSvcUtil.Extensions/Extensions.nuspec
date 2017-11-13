@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>Beedevelop.Xrm.Tooling.CrmSvcUtil.Extensions</id>
-        <version>$version$-alpha</version>
+        <version>$version$</version>
         <title>Beedev.Xrm.CrmSvcUtil.Extensions</title>
         <authors>be(e) develop Joachim Jauß</authors>
         <owners>be(e) develop Joachim Jauß</owners>
