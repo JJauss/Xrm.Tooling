@@ -1,4 +1,5 @@
 ﻿using System;
+using Beedev.Xrm.CrmSvcUtil.Extensions.Configuration.Filter;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Beedev.Xrm.CrmSvcUtil.Extensions.Configuration

@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.Text.RegularExpressions;
 using Beedev.Xrm.CrmSvcUtil.Extensions.Configuration;
+using Beedev.Xrm.CrmSvcUtil.Extensions.Configuration.Filter;
 using Microsoft.Crm.Services.Utility;
 using Microsoft.Xrm.Sdk.Metadata;
 

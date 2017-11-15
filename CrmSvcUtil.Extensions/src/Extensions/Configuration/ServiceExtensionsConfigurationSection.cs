@@ -1,4 +1,5 @@
 ﻿using System.Configuration;
+using Beedev.Xrm.CrmSvcUtil.Extensions.Configuration.Filter;
 
 namespace Beedev.Xrm.CrmSvcUtil.Extensions.Configuration
 {

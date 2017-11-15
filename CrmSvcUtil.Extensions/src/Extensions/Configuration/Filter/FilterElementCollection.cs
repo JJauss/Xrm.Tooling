@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace Beedev.Xrm.CrmSvcUtil.Extensions.Configuration{
+﻿namespace Beedev.Xrm.CrmSvcUtil.Extensions.Configuration.Filter{
   internal class FilterElementCollection:FilterElementCollectionBase<FilterElement>{
 
   }

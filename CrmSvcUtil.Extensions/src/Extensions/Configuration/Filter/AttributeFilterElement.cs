@@ -1,6 +1,6 @@
 ﻿using System.Configuration;
 
-namespace Beedev.Xrm.CrmSvcUtil.Extensions.Configuration{
+namespace Beedev.Xrm.CrmSvcUtil.Extensions.Configuration.Filter{
   public class AttributeFilterElement: FilterElement{
 
     public AttributeFilterElement(){

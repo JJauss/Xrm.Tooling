@@ -1,5 +1,6 @@
 ﻿using System;
 using Beedev.Xrm.CrmSvcUtil.Extensions.Configuration;
+using Beedev.Xrm.CrmSvcUtil.Extensions.Configuration.Filter;
 using Microsoft.Crm.Services.Utility;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Microsoft.Xrm.Sdk.Metadata;

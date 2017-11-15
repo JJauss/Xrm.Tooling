@@ -1,6 +1,6 @@
 ﻿using System.Configuration;
 
-namespace Beedev.Xrm.CrmSvcUtil.Extensions.Configuration{
+namespace Beedev.Xrm.CrmSvcUtil.Extensions.Configuration.Filter{
   internal abstract class FilterElementCollectionBase<T>  : ConfigurationElementCollection
     where T : FilterElement, new()
   {
