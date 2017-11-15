@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2008
+VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{F4AE8219-EC47-4F79-80EF-92D787B444E7}"
 EndProject
@@ -14,7 +14,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{1F89E447-2
 		readme.md = readme.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGetRegistraton.Sample", "sample\NuGetRegistraton.Sample\NuGetRegistraton.Sample.csproj", "{D961949F-FA09-4828-AEF4-FD1A3082BCBD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Filtering.Sample", "sample\NuGetRegistraton.Sample\Filtering.Sample.csproj", "{D961949F-FA09-4828-AEF4-FD1A3082BCBD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions", "src\Extensions\Extensions.csproj", "{7E4E6418-1F2E-4BD2-992C-652EC2FE4CE1}"
 EndProject
