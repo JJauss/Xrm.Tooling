@@ -1,10 +1,11 @@
 ﻿using System.Configuration;
+using Beedev.Xrm.CrmSvcUtil.Extensions.Configuration.Filter;
 
-namespace Beedev.Xrm.CrmSvcUtil.Extensions.Configuration.Filter{
-  internal abstract class FilterElementCollectionBase<T>  : ConfigurationElementCollection
-    where T : FilterElement, new()
+namespace Beedev.Xrm.CrmSvcUtil.Extensions.Configuration{
+  internal abstract class ElementCollectionBase<T>  : ConfigurationElementCollection
+    where T : ConfigurationElement,  new()
   {
-    protected FilterElementCollectionBase(){
+    protected ElementCollectionBase(){
       T filter = (T)CreateNewElement();
       Add(filter);
     }
@@ -16,8 +17,10 @@ namespace Beedev.Xrm.CrmSvcUtil.Extensions.Configuration.Filter{
     }
 
     protected override object GetElementKey(ConfigurationElement element){
-      return ((T)element).Expression;
+      return GetElementKey((T)element);
     }
+
+    protected abstract object GetElementKey(T element);
 
     public T this[int index] {
       get => (T)BaseGet(index);
@@ -50,7 +53,7 @@ namespace Beedev.Xrm.CrmSvcUtil.Extensions.Configuration.Filter{
     public void Remove(T element)
     {
       if (BaseIndexOf(element) >= 0)
-        BaseRemove(element.Expression);
+        BaseRemove(GetElementKey(element));
     }
 
     public void RemoveAt(int index)
