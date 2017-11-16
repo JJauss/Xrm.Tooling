@@ -1,8 +1,10 @@
-﻿using System.Configuration;
+﻿using System.Collections;
+using System.Collections.Generic;
+using System.Configuration;
 using Beedev.Xrm.CrmSvcUtil.Extensions.Configuration.Filter;
 
 namespace Beedev.Xrm.CrmSvcUtil.Extensions.Configuration{
-  internal abstract class ElementCollectionBase<T>  : ConfigurationElementCollection
+  internal abstract class ElementCollectionBase<T>  : ConfigurationElementCollection, IEnumerable<T>
     where T : ConfigurationElement,  new()
   {
     protected ElementCollectionBase(){
@@ -69,6 +71,14 @@ namespace Beedev.Xrm.CrmSvcUtil.Extensions.Configuration{
     public void Clear()
     {
       BaseClear();
+    }
+
+    /// <inheritdoc />
+    public new IEnumerator<T> GetEnumerator(){
+      IEnumerator enumerator = base.GetEnumerator();
+      while (enumerator.MoveNext()){
+        yield return (T) enumerator.Current;
+      }
     }
   }
 }

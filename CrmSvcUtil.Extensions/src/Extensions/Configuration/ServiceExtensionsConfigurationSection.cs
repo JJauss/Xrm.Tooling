@@ -6,6 +6,7 @@ namespace Beedev.Xrm.CrmSvcUtil.Extensions.Configuration
 {
   internal interface IServiceExtensionsConfiguration{
     FilteringElement Filtering{ get; set; }
+    NamingElement Naming{ get; set; }
   }
 
   internal sealed class ServiceExtensionsConfigurationSection:ConfigurationSection, IServiceExtensionsConfiguration{

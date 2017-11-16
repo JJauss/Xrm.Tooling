@@ -3,6 +3,14 @@ using System.Configuration;
 
 namespace Beedev.Xrm.CrmSvcUtil.Extensions.Configuration.Naming{
   internal class PublisherElement : ConfigurationElement{
+    public PublisherElement(){
+     
+    }
+
+    public PublisherElement(string name){
+      Name = name;
+    }
+
     [ConfigurationProperty("name", IsKey = true, IsRequired = true)]
     public string Name{
       get => (string) this["name"];
