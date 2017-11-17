@@ -4,12 +4,12 @@ using Microsoft.Xrm.Sdk;
 using Microsoft.Xrm.Sdk.Metadata;
 using Moq;
 
-namespace Beedev.Xrm.CrmSvcUtil.Extensions.Naming.Tests{
-  internal class DefaultNamingServiceMock: INamingService{
+namespace Beedev.Xrm.CrmSvcUtil.Extensions.Mocks{
+  internal class NamingServiceMock: INamingService{
     private readonly Mock<INamingService> _mock;
     private INamingService NamingServiceImplementation => _mock?.Object;
 
-    public static DefaultNamingServiceMock Create(MockRepository repository, IServiceProvider serviceProvider){
+    public static NamingServiceMock Create(MockRepository repository, string serviceContextName, IServiceProvider serviceProvider){
       Mock<INamingService> namingServiceMock = repository.Create<INamingService>();
       namingServiceMock.Setup(mock => mock.GetNameForEntity(It.IsAny<EntityMetadata>(), serviceProvider)).Returns<EntityMetadata, IServiceProvider>((entity, services) => entity.SchemaName);
       namingServiceMock.Setup(mock => mock.GetNameForEntitySet(It.IsAny<EntityMetadata>(), serviceProvider)).Returns<EntityMetadata, IServiceProvider>((entity, services) => entity.CollectionSchemaName);
@@ -17,14 +17,14 @@ namespace Beedev.Xrm.CrmSvcUtil.Extensions.Naming.Tests{
       namingServiceMock.Setup(mock => mock.GetNameForRelationship(It.IsAny<EntityMetadata>(), It.IsAny<RelationshipMetadataBase>(), null, serviceProvider)).Returns<EntityMetadata, RelationshipMetadataBase, EntityRole?, IServiceProvider>((entity, relation, role, services) => relation.SchemaName);
       namingServiceMock.Setup(mock => mock.GetNameForOptionSet(It.IsAny<EntityMetadata>(), It.IsAny<OptionSetMetadata>(), serviceProvider)).Returns<EntityMetadata, OptionSetMetadata, IServiceProvider>((entity, optionSet, services) => optionSet.Name);
       namingServiceMock.Setup(mock => mock.GetNameForOption(It.IsAny<OptionSetMetadata>(), It.IsAny<OptionMetadata>(), serviceProvider)).Returns<OptionSetMetadata, OptionMetadata, IServiceProvider>((optionSet, option, services) => option?.Label?.UserLocalizedLabel?.Label);
-      namingServiceMock.Setup(mock => mock.GetNameForServiceContext(serviceProvider)).Returns<IServiceProvider>((services) => "ServiceContextName");
+      namingServiceMock.Setup(mock => mock.GetNameForServiceContext(serviceProvider)).Returns<IServiceProvider>((services) => serviceContextName);
       namingServiceMock.Setup(mock => mock.GetNameForMessagePair(It.IsAny<SdkMessagePair>(), serviceProvider)).Returns<SdkMessagePair, IServiceProvider>((messagePair, services) => messagePair.Message.Name);
       namingServiceMock.Setup(mock => mock.GetNameForRequestField(It.IsAny<SdkMessageRequest>(), It.IsAny<SdkMessageRequestField>(), serviceProvider)).Returns<SdkMessageRequest, SdkMessageRequestField, IServiceProvider>((request, field, services) => field.Name);
       namingServiceMock.Setup(mock => mock.GetNameForResponseField(It.IsAny<SdkMessageResponse>(), It.IsAny<SdkMessageResponseField>(), serviceProvider)).Returns<SdkMessageResponse, SdkMessageResponseField, IServiceProvider>((response, field, services) => field.Name);
-      return new DefaultNamingServiceMock(namingServiceMock);
+      return new NamingServiceMock(namingServiceMock);
     }
 
-    private DefaultNamingServiceMock(Mock<INamingService> namingServiceMock){
+    private NamingServiceMock(Mock<INamingService> namingServiceMock){
       _mock = namingServiceMock;
     }
 

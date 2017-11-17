@@ -12,8 +12,8 @@ namespace Beedev.Xrm.CrmSvcUtil.Extensions.Naming
   public class NamingService: INamingService
   {
     private static readonly TraceSource ts = new TraceSource("Beedev.Xrm.CrmSvcUtil.Extensions", SourceLevels.Information);
-    private INamingService _defaultService;
-    private IServiceExtensionsConfiguration _configuration;
+    private readonly INamingService _defaultService;
+    private readonly IServiceExtensionsConfiguration _configuration;
 
     public NamingService(INamingService defaultService):this(defaultService, ServiceExtensionsConfigurationSection.Create())
     {
