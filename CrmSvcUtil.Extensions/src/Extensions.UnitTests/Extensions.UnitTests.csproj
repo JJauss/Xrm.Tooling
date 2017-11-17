@@ -84,6 +84,7 @@
   <ItemGroup>
     <Compile Include="Configuration\ServicesConfigurationSectionTests.cs" />
     <Compile Include="Filter\RegExFilterServiceTests.cs" />
+    <Compile Include="Naming\DefaultNamingServiceMock.cs" />
     <Compile Include="Naming\NamingServiceTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

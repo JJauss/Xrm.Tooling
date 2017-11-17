@@ -1,40 +1,51 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Beedev.Xrm.CrmSvcUtil.Extensions.Naming;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 using Beedev.Xrm.CrmSvcUtil.Extensions.Configuration;
 using Beedev.Xrm.CrmSvcUtil.Extensions.Configuration.Naming;
-using Microsoft.Crm.Services.Utility;
+using Beedev.Xrm.CrmSvcUtil.Extensions.Naming.Tests;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Microsoft.Xrm.Sdk;
 using Microsoft.Xrm.Sdk.Metadata;
 using Moq;
+using Newtonsoft.Json;
 
-namespace Beedev.Xrm.CrmSvcUtil.Extensions.Naming.Tests
+namespace Beedev.Xrm.CrmSvcUtil.Extensions.Naming
 {
-  [TestClass()]
+  [TestClass]
   public class NamingServiceTests
   {
     private ServiceExtensionsConfigurationSection _configuration;
     private IServiceProvider _serviceProvider;
-    private Mock<INamingService> _namingServiceMock;
+    private DefaultNamingServiceMock _namingServiceMock;
 
     [TestInitialize]
     public void TestInitialize(){
       MockRepository mockRepository = new MockRepository(MockBehavior.Strict);
       _configuration = new ServiceExtensionsConfigurationSection();
       _serviceProvider = mockRepository.Create<IServiceProvider>().Object;
-      _namingServiceMock = mockRepository.Create<INamingService>();
-      _namingServiceMock.Setup(mock => mock.GetNameForEntity(It.IsAny<EntityMetadata>(), _serviceProvider)).Returns<EntityMetadata, IServiceProvider>((metadata, services) => metadata.LogicalName);
+      _namingServiceMock = DefaultNamingServiceMock.Create(mockRepository, _serviceProvider);
     }
 
-    [TestMethod()]
+    [TestMethod]
     public void GetNameForEntityTest(){
-      NamingService namingService = new NamingService(_namingServiceMock.Object,_configuration);
+      NamingService namingService = new NamingService(_namingServiceMock,_configuration);
       _configuration.Naming.Publisher.Add(new PublisherElement("beedev_"));
-      Assert.AreEqual("account", namingService.GetNameForEntity(new EntityMetadata{LogicalName = "account"}, _serviceProvider));
-      Assert.AreEqual("sampleEntity", namingService.GetNameForEntity(new EntityMetadata{LogicalName = "beedev_sampleEntity"}, _serviceProvider));
+      EntityMetadata acountMetadata = JsonConvert.DeserializeObject<EntityMetadata>("{\"SchemaName\":\"Account\", \"CollectionSchemaName\":\"AccountSet\"}");
+      EntityMetadata sampleEntityMetadata = JsonConvert.DeserializeObject<EntityMetadata>("{\"SchemaName\":\"beedev_SampleEntity\", \"CollectionSchemaName\":\"beedev_SampleEntitySet\"}");
+
+      Assert.AreEqual("Account", namingService.GetNameForEntity(acountMetadata, _serviceProvider));
+      Assert.AreEqual("SampleEntity", namingService.GetNameForEntity(sampleEntityMetadata, _serviceProvider));
+
+      Assert.AreEqual("AccountSet", namingService.GetNameForEntitySet(acountMetadata, _serviceProvider));
+      Assert.AreEqual("SampleEntitySet", namingService.GetNameForEntitySet(sampleEntityMetadata, _serviceProvider));
+
+      Assert.AreEqual("Name", namingService.GetNameForAttribute(null, new AttributeMetadata{SchemaName = "Name"}, _serviceProvider));
+      Assert.AreEqual("Name", namingService.GetNameForAttribute(null, new AttributeMetadata{SchemaName = "beedev_Name"}, _serviceProvider));
+
+      Assert.AreEqual("Name", namingService.GetNameForOptionSet(acountMetadata, new OptionSetMetadata{Name = "Name"}, _serviceProvider));
+      Assert.AreEqual("Name", namingService.GetNameForOptionSet(acountMetadata, new OptionSetMetadata{Name = "beedev_Name"}, _serviceProvider));
+
+      Assert.AreEqual("Name", namingService.GetNameForOption(new OptionSetMetadata(), new OptionMetadata{Label = new Label("Name", 1033){UserLocalizedLabel = new LocalizedLabel("Name", 1033)}},  _serviceProvider));
+      Assert.AreEqual("Name", namingService.GetNameForOption(new OptionSetMetadata(), new OptionMetadata{Label = new Label("beedev_Name", 1033){UserLocalizedLabel = new LocalizedLabel("beedev_Name", 1033)}},  _serviceProvider));
     }
   }
 }

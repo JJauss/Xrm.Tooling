@@ -1,5 +1,8 @@
 ﻿<SolutionConfiguration>
   <Settings>
+    <MetricsExclusionList>
+      <Value>sample\NuGetRegistraton.Sample\Filtering.Sample.csproj</Value>
+    </MetricsExclusionList>
     <SolutionConfigured>True</SolutionConfigured>
   </Settings>
 </SolutionConfiguration>
