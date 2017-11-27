@@ -1,5 +1,6 @@
 ﻿<SolutionConfiguration>
   <Settings>
+    <InferProjectReferencesUsingAssemblyNames>True</InferProjectReferencesUsingAssemblyNames>
     <MetricsExclusionList>
       <Value>sample\NuGetRegistraton.Sample\Filtering.Sample.csproj</Value>
     </MetricsExclusionList>

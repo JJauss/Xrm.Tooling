@@ -64,5 +64,19 @@ namespace Beedev.Xrm.CrmSvcUtil.Extensions.Naming
       Assert.AreEqual("ResponseField", namingService.GetNameForResponseField(new SdkMessageResponse(Guid.NewGuid()), new SdkMessageResponseField(0, "ResponseField", "", null), _serviceProvider));
       Assert.AreEqual("ResponseField", namingService.GetNameForResponseField(new SdkMessageResponse(Guid.NewGuid()), new SdkMessageResponseField(0, "beedev_ResponseField", "", null), _serviceProvider));
     }
+
+    [TestMethod]
+    public void MapNameTest(){
+      NamingService namingService = new NamingService(_namingServiceMock, _configuration);
+      _configuration.Naming.Mapping.Clear();
+      _configuration.Naming.Mapping.Add(new Map("sample_15entity", "Entity15"));
+      _configuration.Naming.Mapping.Add(new Map("sample_15entity.01_address", "MyAddress"){Type = MapType.Attribute});
+
+      EntityMetadata entityMetadata = new EntityMetadata{LogicalName = "sample_15entity"};
+      AttributeMetadata attributeMetadata = JsonConvert.DeserializeObject<AttributeMetadata>("{\"LogicalName\":\"01_address\", \"EntityLogicalName\":\"sample_15entity\"}");
+      Assert.AreEqual("Entity15", namingService.GetNameForEntity(entityMetadata,_serviceProvider));
+      Assert.AreEqual("MyAddress", namingService.GetNameForAttribute(entityMetadata,attributeMetadata,  _serviceProvider));
+    }
+
   }
 }

@@ -3,6 +3,7 @@ using System.Diagnostics;
 using System.Linq;
 using Beedev.Xrm.CrmSvcUtil.Extensions.Configuration;
 using Beedev.Xrm.CrmSvcUtil.Extensions.Configuration.Naming;
+using Beedev.Xrm.CrmSvcUtil.Extensions.Naming.Mapping;
 using Microsoft.Crm.Services.Utility;
 using Microsoft.Xrm.Sdk;
 using Microsoft.Xrm.Sdk.Metadata;
@@ -14,6 +15,7 @@ namespace Beedev.Xrm.CrmSvcUtil.Extensions.Naming
     private static readonly TraceSource ts = new TraceSource("Beedev.Xrm.CrmSvcUtil.Extensions", SourceLevels.Information);
     private readonly INamingService _defaultService;
     private readonly IServiceExtensionsConfiguration _configuration;
+    private readonly IMapper _mapper;
 
     public NamingService(INamingService defaultService):this(defaultService, ServiceExtensionsConfigurationSection.Create())
     {
@@ -23,6 +25,7 @@ namespace Beedev.Xrm.CrmSvcUtil.Extensions.Naming
     {
       _defaultService = defaultService;
       _configuration = configuration;
+      _mapper = new ConfigurationMapper(_configuration.Naming.Mapping);
     }
 
     /// <inheritdoc />
@@ -41,14 +44,23 @@ namespace Beedev.Xrm.CrmSvcUtil.Extensions.Naming
 
     /// <inheritdoc />
     public string GetNameForEntity(EntityMetadata entityMetadata, IServiceProvider services){
-      string value =  _defaultService.GetNameForEntity(entityMetadata, services);
+      if (_mapper.GetNameFromMap(entityMetadata, services, out string value))
+      {
+        return value;
+      }
+
+      value =  _defaultService.GetNameForEntity(entityMetadata, services);
       value = ModifyPublisher(value);
       return value;
     }
 
     /// <inheritdoc />
     public string GetNameForAttribute(EntityMetadata entityMetadata, AttributeMetadata attributeMetadata, IServiceProvider services){
-      string value = _defaultService.GetNameForAttribute(entityMetadata, attributeMetadata, services);
+      if (_mapper.GetNameFromMap(entityMetadata, attributeMetadata, services, out string value)){
+        return value;
+      }
+
+      value = _defaultService.GetNameForAttribute(entityMetadata, attributeMetadata, services);
       value = ModifyPublisher(value);
       return value;
     }
@@ -97,7 +109,7 @@ namespace Beedev.Xrm.CrmSvcUtil.Extensions.Naming
 
     private string ModifyPublisher(string name){
       foreach (PublisherElement publisherElement in _configuration.Naming.Publisher.Where(p => p.Action == PublisherNamingAction.Remove)){
-        if (name.StartsWith(publisherElement.Name)){
+        if (name?.StartsWith(publisherElement.Name)?? false){
           name = name.Substring(publisherElement.Name.Length);
         }
       }

@@ -72,11 +72,16 @@
     <Compile Include="Configuration\ElementCollectionBase.cs" />
     <Compile Include="Configuration\Filter\FilteringElement.cs" />
     <Compile Include="Configuration\Filter\IFilter.cs" />
+    <Compile Include="Configuration\Naming\Map.cs" />
+    <Compile Include="Configuration\Naming\MappingCollection.cs" />
+    <Compile Include="Configuration\Naming\MapType.cs" />
     <Compile Include="Configuration\Naming\NamingElement.cs" />
     <Compile Include="Configuration\Naming\PublisherElement.cs" />
     <Compile Include="Configuration\Naming\PublisherElementCollection.cs" />
     <Compile Include="Configuration\ServiceExtensionsConfigurationSection.cs" />
     <Compile Include="Filter\RegExFilterService.cs" />
+    <Compile Include="Naming\Mapping\ConfigurationMapper.cs" />
+    <Compile Include="Naming\Mapping\IMapper.cs" />
     <Compile Include="Naming\NamingService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
