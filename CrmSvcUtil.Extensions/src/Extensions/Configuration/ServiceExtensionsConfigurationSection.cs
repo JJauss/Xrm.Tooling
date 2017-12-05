@@ -7,6 +7,7 @@ namespace Beedev.Xrm.CrmSvcUtil.Extensions.Configuration
   internal interface IServiceExtensionsConfiguration{
     FilteringElement Filtering{ get; set; }
     NamingElement Naming{ get; set; }
+    bool GenerateOptionSets{ get; set; }
   }
 
   internal sealed class ServiceExtensionsConfigurationSection:ConfigurationSection, IServiceExtensionsConfiguration{
@@ -27,5 +28,8 @@ namespace Beedev.Xrm.CrmSvcUtil.Extensions.Configuration
 
     [ConfigurationProperty("Naming")]
     public NamingElement Naming{ get => (NamingElement) base["Naming"]; set => base["Naming"] = value; }
+
+    [ConfigurationProperty("generateOptionSets", DefaultValue = false)]
+    public bool GenerateOptionSets{ get => (bool)base["generateOptionSets"]; set => base["generateOptionSets"] = value; }
   }
 }

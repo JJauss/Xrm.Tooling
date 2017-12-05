@@ -16,6 +16,1845 @@ namespace NuGetRegistraton.Sample.Data
 	
 	[System.Runtime.Serialization.DataContractAttribute()]
 	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum activitypointer_deliveryprioritycode
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Low = 0,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Normal = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		High = 2,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum qooi_pricingerrorcode
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		None = 0,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		DetailError = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		MissingPriceLevel = 2,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		InactivePriceLevel = 3,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		MissingQuantity = 4,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		MissingUnitPrice = 5,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		MissingProduct = 6,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		InvalidProduct = 7,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		MissingPricingCode = 8,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		InvalidPricingCode = 9,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		MissingUOM = 10,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		ProductNotInPriceLevel = 11,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		MissingPriceLevelAmount = 12,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		MissingPriceLevelPercentage = 13,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		MissingPrice = 14,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		MissingCurrentCost = 15,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		MissingStandardCost = 16,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		InvalidPriceLevelAmount = 17,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		InvalidPriceLevelPercentage = 18,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		InvalidPrice = 19,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		InvalidCurrentCost = 20,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		InvalidStandardCost = 21,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		InvalidRoundingPolicy = 22,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		InvalidRoundingOption = 23,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		InvalidRoundingAmount = 24,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		PriceCalculationError = 25,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		InvalidDiscountType = 26,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		DiscountTypeInvalidState = 27,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		InvalidDiscount = 28,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		InvalidQuantity = 29,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		InvalidPricingPrecision = 30,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		MissingProductDefaultUOM = 31,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		MissingProductUOMSchedule = 32,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		InactiveDiscountType = 33,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		InvalidPriceLevelCurrency = 34,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		PriceAttributeOutOfRange = 35,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		BaseCurrencyAttributeOverflow = 36,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		BaseCurrencyAttributeUnderflow = 37,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum orginsightsconfiguration_lookback
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		_2H = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		_48H = 2,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		_7D = 3,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		_30D = 4,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum componentstate
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Published = 0,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Unpublished = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Deleted = 2,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		DeletedUnpublished = 3,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum initialcommunication
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Contacted = 0,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		NotContacted = 1,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum socialactivity_postmessagetype
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		PublicMessage = 0,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		PrivateMessage = 1,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum workflow_stage
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Preoperation = 20,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Postoperation = 40,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum qooiproduct_producttype
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Product = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Bundle = 2,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		RequiredBundleProduct = 3,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		OptionalBundleProduct = 4,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		ProjectbasedService = 5,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum purchasetimeframe
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Immediate = 0,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		ThisQuarter = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		NextQuarter = 2,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		ThisYear = 3,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Unknown = 4,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum convertrule_channelactivity
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		PhoneCall = 4210,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Email = 4202,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Appointment = 4201,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		ServiceActivity = 4214,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Task = 4212,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		SocialActivity = 4216,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum goal_fiscalperiod
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Quarter1 = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Quarter2 = 2,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Quarter3 = 3,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Quarter4 = 4,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		January = 101,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		February = 102,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		March = 103,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		April = 104,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		May = 105,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		June = 106,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		July = 107,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		August = 108,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		September = 109,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		October = 110,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		November = 111,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		December = 112,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Semester1 = 201,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Semester2 = 202,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Annual = 301,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		P1 = 401,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		P2 = 402,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		P3 = 403,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		P4 = 404,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		P5 = 405,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		P6 = 406,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		P7 = 407,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		P8 = 408,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		P9 = 409,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		P10 = 410,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		P11 = 411,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		P12 = 412,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		P13 = 413,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum workflow_runas
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Owner = 0,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		CallingUser = 1,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum servicestage
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Identify = 0,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Research = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Resolve = 2,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum mobileofflineenabledentities
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Account = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Contact = 2,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Opportunity = 3,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Lead = 4,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Note = 5,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		User = 8,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Team = 9,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Case = 112,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Competitor = 123,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Attachment = 1001,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		CompetitorAddress = 1004,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Product = 1024,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		OpportunityProduct = 1083,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Queue = 2020,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		QueueItem = 2029,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Appointment = 4201,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Email = 4202,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Task = 4212,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Entitlement = 9700,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		SLAKPIInstance = 9752,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum need
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Musthave = 0,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Shouldhave = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Goodtohave = 2,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Noneed = 3,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum recommendationmodelversion_synchronizationstatus
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		NotStarted = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		InProgress = 2,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Completed = 3,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Failed = 4,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum sla_slaenabledentities
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Case = 112,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum recurrencerule_monthofyear
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		InvalidMonthOfYear = 0,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		January = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		February = 2,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		March = 3,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		April = 4,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		May = 5,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		June = 6,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		July = 7,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		August = 8,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		September = 9,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		October = 10,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		November = 11,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		December = 12,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum connectionrole_category
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Business = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Family = 2,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Social = 3,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Sales = 4,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Other = 5,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Stakeholder = 1000,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		SalesTeam = 1001,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Service = 1002,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum knowledgearticle_expirationstate
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Expired = 4,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Published = 3,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Archived = 5,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum workflowlog_objecttypecode
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		SystemJob = 4700,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		WorkflowSession = 4710,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum metric_goaltype
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Money = 0,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Decimal = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Integer = 2,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum sharepointdocumentlocation_locationtype
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		General = 0,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		DedicatedforOneNoteIntegration = 1,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum componenttype
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Entity = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Attribute = 2,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Relationship = 3,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		AttributePicklistValue = 4,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		AttributeLookupValue = 5,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		ViewAttribute = 6,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		LocalizedLabel = 7,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		RelationshipExtraCondition = 8,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		OptionSet = 9,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		EntityRelationship = 10,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		EntityRelationshipRole = 11,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		EntityRelationshipRelationships = 12,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		ManagedProperty = 13,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		EntityKey = 14,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Role = 20,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		RolePrivilege = 21,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		DisplayString = 22,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		DisplayStringMap = 23,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Form = 24,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Organization = 25,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		SavedQuery = 26,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Workflow = 29,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Report = 31,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		ReportEntity = 32,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		ReportCategory = 33,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		ReportVisibility = 34,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Attachment = 35,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		EmailTemplate = 36,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		ContractTemplate = 37,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		KBArticleTemplate = 38,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		MailMergeTemplate = 39,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		DuplicateRule = 44,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		DuplicateRuleCondition = 45,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		EntityMap = 46,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		AttributeMap = 47,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		RibbonCommand = 48,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		RibbonContextGroup = 49,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		RibbonCustomization = 50,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		RibbonRule = 52,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		RibbonTabToCommandMap = 53,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		RibbonDiff = 55,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		SavedQueryVisualization = 59,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		SystemForm = 60,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		WebResource = 61,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		SiteMap = 62,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		ConnectionRole = 63,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FieldSecurityProfile = 70,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FieldPermission = 71,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		PluginType = 90,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		PluginAssembly = 91,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		SDKMessageProcessingStep = 92,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		SDKMessageProcessingStepImage = 93,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		ServiceEndpoint = 95,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		RoutingRule = 150,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		RoutingRuleItem = 151,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		SLA = 152,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		SLAItem = 153,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		ConvertRule = 154,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		ConvertRuleItem = 155,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		HierarchyRule = 65,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		MobileOfflineProfile = 161,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		MobileOfflineProfileItem = 162,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		SimilarityRule = 165,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		CustomControl = 66,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		CustomControlDefaultConfig = 68,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum selectedmobileofflineenabledentityrelationships
+	{
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum socialprofile_community
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Facebook = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Twitter = 2,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Other = 0,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum incident_caseorigincode
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Phone = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Email = 2,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Web = 3,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Facebook = 2483,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Twitter = 3986,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum qooiproduct_propertiesconfigurationstatus
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Edit = 0,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Rectify = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		NotConfigured = 2,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum sharepoint_validationstatusreason
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		ThisrecordsURLhasnotbeenvalidated = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		ThisrecordsURLisvalid = 2,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		ThisrecordsURLisnotvalid = 3,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		TheURLschemesofMicrosoftDynamics365andSharePointaredifferent = 4,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		TheURLcouldnotbeaccessedbecauseofInternetExplorersecuritysettings = 5,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Authenticationfailure = 6,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Invalidcertificates = 7,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum goal_fiscalyear
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY2038 = 2038,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY2037 = 2037,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY2036 = 2036,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY2035 = 2035,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY2034 = 2034,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY2033 = 2033,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY2032 = 2032,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY2031 = 2031,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY2030 = 2030,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY2029 = 2029,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY2028 = 2028,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY2027 = 2027,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY2026 = 2026,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY2025 = 2025,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY2024 = 2024,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY2023 = 2023,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY2022 = 2022,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY2021 = 2021,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY2020 = 2020,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY2019 = 2019,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY2018 = 2018,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY2017 = 2017,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY2016 = 2016,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY2015 = 2015,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY2014 = 2014,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY2013 = 2013,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY2012 = 2012,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY2011 = 2011,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY2010 = 2010,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY2009 = 2009,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY2008 = 2008,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY2007 = 2007,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY2006 = 2006,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY2005 = 2005,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY2004 = 2004,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY2003 = 2003,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY2002 = 2002,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY2001 = 2001,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY2000 = 2000,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY1999 = 1999,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY1998 = 1998,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY1997 = 1997,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY1996 = 1996,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY1995 = 1995,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY1994 = 1994,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY1993 = 1993,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY1992 = 1992,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY1991 = 1991,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY1990 = 1990,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY1989 = 1989,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY1988 = 1988,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY1987 = 1987,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY1986 = 1986,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY1985 = 1985,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY1984 = 1984,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY1983 = 1983,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY1982 = 1982,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY1981 = 1981,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY1980 = 1980,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY1979 = 1979,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY1978 = 1978,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY1977 = 1977,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY1976 = 1976,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY1975 = 1975,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY1974 = 1974,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY1973 = 1973,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY1972 = 1972,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY1971 = 1971,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FY1970 = 1970,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum syncattributemapping_syncdirection
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		None = 0,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		ToExchange = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		ToCRM = 2,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Bidirectional = 3,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum sharepoint_validationstatus
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		NotValidated = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		InProgress = 2,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Invalid = 3,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Valid = 4,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Couldnotvalidate = 5,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum budgetstatus
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		NoCommittedBudget = 0,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		MayBuy = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		CanBuy = 2,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		WillBuy = 3,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum bookableresourcecharacteristictype
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Skill = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Certification = 2,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum opportunity_salesstage
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Qualify = 0,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Develop = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Propose = 2,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Close = 3,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum emailserverprofile_authenticationprotocol
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		AutoDetect = 0,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Negotiate = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		NTLM = 2,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Basic = 3,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum dependencytype
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		None = 0,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		SolutionInternal = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Published = 2,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Unpublished = 4,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum lead_salesstage
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Qualify = 0,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum purchaseprocess
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Individual = 0,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Committee = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Unknown = 2,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum orginsightsconfiguration_plotoption
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Line = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Column = 2,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Area = 3,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Pie = 4,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Bar = 5,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Donut = 6,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Infocard = 7,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		List = 8,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		DoubleDonut = 9,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		LinearGauge = 10,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Bubble = 11,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum principalsyncattributemapping_syncdirection
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		None = 0,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		ToExchange = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		ToCRM = 2,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Bidirectional = 3,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum sharepointsite_servicetype
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		SharePoint = 0,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		OneDrive = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Sharedwithme = 2,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum processstage_category
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Qualify = 0,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Develop = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Propose = 2,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Close = 3,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Identify = 4,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Research = 5,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Resolve = 6,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Approval = 7,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum field_security_permission_type
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		NotAllowed = 0,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Allowed = 4,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum activitypointer_activitytypecode
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Fax = 4204,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		PhoneCall = 4210,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Email = 4202,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Letter = 4207,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Appointment = 4201,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		ServiceActivity = 4214,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		OpportunityClose = 4208,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		OrderClose = 4209,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		QuoteClose = 4211,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		CaseResolution = 4206,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Task = 4212,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		CampaignResponse = 4401,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		CampaignActivity = 4402,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		BulkOperation = 4406,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		RecurringAppointment = 4251,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum AccountAccountCategoryCode
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		PreferredCustomer = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Standard = 2,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum AccountAccountClassificationCode
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		DefaultValue = 1,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum AccountAccountRatingCode
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		DefaultValue = 1,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum AccountAddress1_AddressTypeCode
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		BillTo = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		ShipTo = 2,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Primary = 3,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Other = 4,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum AccountAddress1_FreightTermsCode
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FOB = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		NoCharge = 2,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum AccountAddress1_ShippingMethodCode
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Airborne = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		DHL = 2,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FedEx = 3,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		UPS = 4,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		PostalMail = 5,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FullLoad = 6,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		WillCall = 7,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum AccountAddress2_AddressTypeCode
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		DefaultValue = 1,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum AccountAddress2_FreightTermsCode
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		DefaultValue = 1,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum AccountAddress2_ShippingMethodCode
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		DefaultValue = 1,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum AccountBusinessTypeCode
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		DefaultValue = 1,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum AccountCustomerSizeCode
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		DefaultValue = 1,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum AccountCustomerTypeCode
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Competitor = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Consultant = 2,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Customer = 3,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Investor = 4,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Partner = 5,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Influencer = 6,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Press = 7,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Prospect = 8,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Reseller = 9,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Supplier = 10,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Vendor = 11,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Other = 12,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum AccountIndustryCode
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Accounting = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		AgricultureandNonpetrolNaturalResourceExtraction = 2,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		BroadcastingPrintingandPublishing = 3,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Brokers = 4,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		BuildingSupplyRetail = 5,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		BusinessServices = 6,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Consulting = 7,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		ConsumerServices = 8,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		DesignDirectionandCreativeManagement = 9,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		DistributorsDispatchersandProcessors = 10,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		DoctorsOfficesandClinics = 11,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		DurableManufacturing = 12,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		EatingandDrinkingPlaces = 13,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		EntertainmentRetail = 14,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		EquipmentRentalandLeasing = 15,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Financial = 16,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		FoodandTobaccoProcessing = 17,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		InboundCapitalIntensiveProcessing = 18,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		InboundRepairandServices = 19,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Insurance = 20,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		LegalServices = 21,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		NonDurableMerchandiseRetail = 22,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		OutboundConsumerService = 23,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		PetrochemicalExtractionandDistribution = 24,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		ServiceRetail = 25,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		SIGAffiliations = 26,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		SocialServices = 27,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		SpecialOutboundTradeContractors = 28,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		SpecialtyRealty = 29,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Transportation = 30,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		UtilityCreationandDistribution = 31,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		VehicleRetail = 32,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Wholesale = 33,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum AccountOwnershipCode
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Public = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Private = 2,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Subsidiary = 3,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Other = 4,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum AccountPaymentTermsCode
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Net30 = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		_210Net30 = 2,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Net45 = 3,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Net60 = 4,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum AccountPreferredAppointmentDayCode
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Sunday = 0,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Monday = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Tuesday = 2,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Wednesday = 3,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Thursday = 4,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Friday = 5,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Saturday = 6,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum AccountPreferredAppointmentTimeCode
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Morning = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Afternoon = 2,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Evening = 3,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum AccountPreferredContactMethodCode
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Any = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Email = 2,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Phone = 3,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Fax = 4,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Mail = 5,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum AccountShippingMethodCode
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		DefaultValue = 1,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
 	public enum AccountState
 	{
 		
@@ -24,6 +1863,15 @@ namespace NuGetRegistraton.Sample.Data
 		
 		[System.Runtime.Serialization.EnumMemberAttribute()]
 		Inactive = 1,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum AccountTerritoryCode
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		DefaultValue = 1,
 	}
 	
 	/// <summary>
@@ -71,16 +1919,31 @@ namespace NuGetRegistraton.Sample.Data
 		/// Select a category to indicate whether the customer account is standard or preferred.
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("accountcategorycode")]
-		public Microsoft.Xrm.Sdk.OptionSetValue AccountCategoryCode
+		public System.Nullable<NuGetRegistraton.Sample.Data.AccountAccountCategoryCode> AccountCategoryCode
 		{
 			get
 			{
-				return this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("accountcategorycode");
+				Microsoft.Xrm.Sdk.OptionSetValue optionSet = this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("accountcategorycode");
+				if ((optionSet != null))
+				{
+					return ((NuGetRegistraton.Sample.Data.AccountAccountCategoryCode)(System.Enum.ToObject(typeof(NuGetRegistraton.Sample.Data.AccountAccountCategoryCode), optionSet.Value)));
+				}
+				else
+				{
+					return null;
+				}
 			}
 			set
 			{
 				this.OnPropertyChanging("AccountCategoryCode");
-				this.SetAttributeValue("accountcategorycode", value);
+				if ((value == null))
+				{
+					this.SetAttributeValue("accountcategorycode", null);
+				}
+				else
+				{
+					this.SetAttributeValue("accountcategorycode", new Microsoft.Xrm.Sdk.OptionSetValue(((int)(value))));
+				}
 				this.OnPropertyChanged("AccountCategoryCode");
 			}
 		}
@@ -89,16 +1952,31 @@ namespace NuGetRegistraton.Sample.Data
 		/// Select a classification code to indicate the potential value of the customer account based on the projected return on investment, cooperation level, sales cycle length or other criteria.
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("accountclassificationcode")]
-		public Microsoft.Xrm.Sdk.OptionSetValue AccountClassificationCode
+		public System.Nullable<NuGetRegistraton.Sample.Data.AccountAccountClassificationCode> AccountClassificationCode
 		{
 			get
 			{
-				return this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("accountclassificationcode");
+				Microsoft.Xrm.Sdk.OptionSetValue optionSet = this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("accountclassificationcode");
+				if ((optionSet != null))
+				{
+					return ((NuGetRegistraton.Sample.Data.AccountAccountClassificationCode)(System.Enum.ToObject(typeof(NuGetRegistraton.Sample.Data.AccountAccountClassificationCode), optionSet.Value)));
+				}
+				else
+				{
+					return null;
+				}
 			}
 			set
 			{
 				this.OnPropertyChanging("AccountClassificationCode");
-				this.SetAttributeValue("accountclassificationcode", value);
+				if ((value == null))
+				{
+					this.SetAttributeValue("accountclassificationcode", null);
+				}
+				else
+				{
+					this.SetAttributeValue("accountclassificationcode", new Microsoft.Xrm.Sdk.OptionSetValue(((int)(value))));
+				}
 				this.OnPropertyChanged("AccountClassificationCode");
 			}
 		}
@@ -164,16 +2042,31 @@ namespace NuGetRegistraton.Sample.Data
 		/// Select a rating to indicate the value of the customer account.
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("accountratingcode")]
-		public Microsoft.Xrm.Sdk.OptionSetValue AccountRatingCode
+		public System.Nullable<NuGetRegistraton.Sample.Data.AccountAccountRatingCode> AccountRatingCode
 		{
 			get
 			{
-				return this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("accountratingcode");
+				Microsoft.Xrm.Sdk.OptionSetValue optionSet = this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("accountratingcode");
+				if ((optionSet != null))
+				{
+					return ((NuGetRegistraton.Sample.Data.AccountAccountRatingCode)(System.Enum.ToObject(typeof(NuGetRegistraton.Sample.Data.AccountAccountRatingCode), optionSet.Value)));
+				}
+				else
+				{
+					return null;
+				}
 			}
 			set
 			{
 				this.OnPropertyChanging("AccountRatingCode");
-				this.SetAttributeValue("accountratingcode", value);
+				if ((value == null))
+				{
+					this.SetAttributeValue("accountratingcode", null);
+				}
+				else
+				{
+					this.SetAttributeValue("accountratingcode", new Microsoft.Xrm.Sdk.OptionSetValue(((int)(value))));
+				}
 				this.OnPropertyChanged("AccountRatingCode");
 			}
 		}
@@ -200,16 +2093,31 @@ namespace NuGetRegistraton.Sample.Data
 		/// Select the primary address type.
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("address1_addresstypecode")]
-		public Microsoft.Xrm.Sdk.OptionSetValue Address1_AddressTypeCode
+		public System.Nullable<NuGetRegistraton.Sample.Data.AccountAddress1_AddressTypeCode> Address1_AddressTypeCode
 		{
 			get
 			{
-				return this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("address1_addresstypecode");
+				Microsoft.Xrm.Sdk.OptionSetValue optionSet = this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("address1_addresstypecode");
+				if ((optionSet != null))
+				{
+					return ((NuGetRegistraton.Sample.Data.AccountAddress1_AddressTypeCode)(System.Enum.ToObject(typeof(NuGetRegistraton.Sample.Data.AccountAddress1_AddressTypeCode), optionSet.Value)));
+				}
+				else
+				{
+					return null;
+				}
 			}
 			set
 			{
 				this.OnPropertyChanging("Address1_AddressTypeCode");
-				this.SetAttributeValue("address1_addresstypecode", value);
+				if ((value == null))
+				{
+					this.SetAttributeValue("address1_addresstypecode", null);
+				}
+				else
+				{
+					this.SetAttributeValue("address1_addresstypecode", new Microsoft.Xrm.Sdk.OptionSetValue(((int)(value))));
+				}
 				this.OnPropertyChanged("Address1_AddressTypeCode");
 			}
 		}
@@ -302,16 +2210,31 @@ namespace NuGetRegistraton.Sample.Data
 		/// Select the freight terms for the primary address to make sure shipping orders are processed correctly.
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("address1_freighttermscode")]
-		public Microsoft.Xrm.Sdk.OptionSetValue Address1_FreightTermsCode
+		public System.Nullable<NuGetRegistraton.Sample.Data.AccountAddress1_FreightTermsCode> Address1_FreightTermsCode
 		{
 			get
 			{
-				return this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("address1_freighttermscode");
+				Microsoft.Xrm.Sdk.OptionSetValue optionSet = this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("address1_freighttermscode");
+				if ((optionSet != null))
+				{
+					return ((NuGetRegistraton.Sample.Data.AccountAddress1_FreightTermsCode)(System.Enum.ToObject(typeof(NuGetRegistraton.Sample.Data.AccountAddress1_FreightTermsCode), optionSet.Value)));
+				}
+				else
+				{
+					return null;
+				}
 			}
 			set
 			{
 				this.OnPropertyChanging("Address1_FreightTermsCode");
-				this.SetAttributeValue("address1_freighttermscode", value);
+				if ((value == null))
+				{
+					this.SetAttributeValue("address1_freighttermscode", null);
+				}
+				else
+				{
+					this.SetAttributeValue("address1_freighttermscode", new Microsoft.Xrm.Sdk.OptionSetValue(((int)(value))));
+				}
 				this.OnPropertyChanged("Address1_FreightTermsCode");
 			}
 		}
@@ -482,16 +2405,31 @@ namespace NuGetRegistraton.Sample.Data
 		/// Select a shipping method for deliveries sent to this address.
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("address1_shippingmethodcode")]
-		public Microsoft.Xrm.Sdk.OptionSetValue Address1_ShippingMethodCode
+		public System.Nullable<NuGetRegistraton.Sample.Data.AccountAddress1_ShippingMethodCode> Address1_ShippingMethodCode
 		{
 			get
 			{
-				return this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("address1_shippingmethodcode");
+				Microsoft.Xrm.Sdk.OptionSetValue optionSet = this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("address1_shippingmethodcode");
+				if ((optionSet != null))
+				{
+					return ((NuGetRegistraton.Sample.Data.AccountAddress1_ShippingMethodCode)(System.Enum.ToObject(typeof(NuGetRegistraton.Sample.Data.AccountAddress1_ShippingMethodCode), optionSet.Value)));
+				}
+				else
+				{
+					return null;
+				}
 			}
 			set
 			{
 				this.OnPropertyChanging("Address1_ShippingMethodCode");
-				this.SetAttributeValue("address1_shippingmethodcode", value);
+				if ((value == null))
+				{
+					this.SetAttributeValue("address1_shippingmethodcode", null);
+				}
+				else
+				{
+					this.SetAttributeValue("address1_shippingmethodcode", new Microsoft.Xrm.Sdk.OptionSetValue(((int)(value))));
+				}
 				this.OnPropertyChanged("Address1_ShippingMethodCode");
 			}
 		}
@@ -626,16 +2564,31 @@ namespace NuGetRegistraton.Sample.Data
 		/// Select the secondary address type.
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("address2_addresstypecode")]
-		public Microsoft.Xrm.Sdk.OptionSetValue Address2_AddressTypeCode
+		public System.Nullable<NuGetRegistraton.Sample.Data.AccountAddress2_AddressTypeCode> Address2_AddressTypeCode
 		{
 			get
 			{
-				return this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("address2_addresstypecode");
+				Microsoft.Xrm.Sdk.OptionSetValue optionSet = this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("address2_addresstypecode");
+				if ((optionSet != null))
+				{
+					return ((NuGetRegistraton.Sample.Data.AccountAddress2_AddressTypeCode)(System.Enum.ToObject(typeof(NuGetRegistraton.Sample.Data.AccountAddress2_AddressTypeCode), optionSet.Value)));
+				}
+				else
+				{
+					return null;
+				}
 			}
 			set
 			{
 				this.OnPropertyChanging("Address2_AddressTypeCode");
-				this.SetAttributeValue("address2_addresstypecode", value);
+				if ((value == null))
+				{
+					this.SetAttributeValue("address2_addresstypecode", null);
+				}
+				else
+				{
+					this.SetAttributeValue("address2_addresstypecode", new Microsoft.Xrm.Sdk.OptionSetValue(((int)(value))));
+				}
 				this.OnPropertyChanged("Address2_AddressTypeCode");
 			}
 		}
@@ -728,16 +2681,31 @@ namespace NuGetRegistraton.Sample.Data
 		/// Select the freight terms for the secondary address to make sure shipping orders are processed correctly.
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("address2_freighttermscode")]
-		public Microsoft.Xrm.Sdk.OptionSetValue Address2_FreightTermsCode
+		public System.Nullable<NuGetRegistraton.Sample.Data.AccountAddress2_FreightTermsCode> Address2_FreightTermsCode
 		{
 			get
 			{
-				return this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("address2_freighttermscode");
+				Microsoft.Xrm.Sdk.OptionSetValue optionSet = this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("address2_freighttermscode");
+				if ((optionSet != null))
+				{
+					return ((NuGetRegistraton.Sample.Data.AccountAddress2_FreightTermsCode)(System.Enum.ToObject(typeof(NuGetRegistraton.Sample.Data.AccountAddress2_FreightTermsCode), optionSet.Value)));
+				}
+				else
+				{
+					return null;
+				}
 			}
 			set
 			{
 				this.OnPropertyChanging("Address2_FreightTermsCode");
-				this.SetAttributeValue("address2_freighttermscode", value);
+				if ((value == null))
+				{
+					this.SetAttributeValue("address2_freighttermscode", null);
+				}
+				else
+				{
+					this.SetAttributeValue("address2_freighttermscode", new Microsoft.Xrm.Sdk.OptionSetValue(((int)(value))));
+				}
 				this.OnPropertyChanged("Address2_FreightTermsCode");
 			}
 		}
@@ -908,16 +2876,31 @@ namespace NuGetRegistraton.Sample.Data
 		/// Select a shipping method for deliveries sent to this address.
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("address2_shippingmethodcode")]
-		public Microsoft.Xrm.Sdk.OptionSetValue Address2_ShippingMethodCode
+		public System.Nullable<NuGetRegistraton.Sample.Data.AccountAddress2_ShippingMethodCode> Address2_ShippingMethodCode
 		{
 			get
 			{
-				return this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("address2_shippingmethodcode");
+				Microsoft.Xrm.Sdk.OptionSetValue optionSet = this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("address2_shippingmethodcode");
+				if ((optionSet != null))
+				{
+					return ((NuGetRegistraton.Sample.Data.AccountAddress2_ShippingMethodCode)(System.Enum.ToObject(typeof(NuGetRegistraton.Sample.Data.AccountAddress2_ShippingMethodCode), optionSet.Value)));
+				}
+				else
+				{
+					return null;
+				}
 			}
 			set
 			{
 				this.OnPropertyChanging("Address2_ShippingMethodCode");
-				this.SetAttributeValue("address2_shippingmethodcode", value);
+				if ((value == null))
+				{
+					this.SetAttributeValue("address2_shippingmethodcode", null);
+				}
+				else
+				{
+					this.SetAttributeValue("address2_shippingmethodcode", new Microsoft.Xrm.Sdk.OptionSetValue(((int)(value))));
+				}
 				this.OnPropertyChanged("Address2_ShippingMethodCode");
 			}
 		}
@@ -1106,16 +3089,31 @@ namespace NuGetRegistraton.Sample.Data
 		/// Select the legal designation or other business type of the account for contracts or reporting purposes.
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("businesstypecode")]
-		public Microsoft.Xrm.Sdk.OptionSetValue BusinessTypeCode
+		public System.Nullable<NuGetRegistraton.Sample.Data.AccountBusinessTypeCode> BusinessTypeCode
 		{
 			get
 			{
-				return this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("businesstypecode");
+				Microsoft.Xrm.Sdk.OptionSetValue optionSet = this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("businesstypecode");
+				if ((optionSet != null))
+				{
+					return ((NuGetRegistraton.Sample.Data.AccountBusinessTypeCode)(System.Enum.ToObject(typeof(NuGetRegistraton.Sample.Data.AccountBusinessTypeCode), optionSet.Value)));
+				}
+				else
+				{
+					return null;
+				}
 			}
 			set
 			{
 				this.OnPropertyChanging("BusinessTypeCode");
-				this.SetAttributeValue("businesstypecode", value);
+				if ((value == null))
+				{
+					this.SetAttributeValue("businesstypecode", null);
+				}
+				else
+				{
+					this.SetAttributeValue("businesstypecode", new Microsoft.Xrm.Sdk.OptionSetValue(((int)(value))));
+				}
 				this.OnPropertyChanged("BusinessTypeCode");
 			}
 		}
@@ -1220,16 +3218,31 @@ namespace NuGetRegistraton.Sample.Data
 		/// Select the size category or range of the account for segmentation and reporting purposes.
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("customersizecode")]
-		public Microsoft.Xrm.Sdk.OptionSetValue CustomerSizeCode
+		public System.Nullable<NuGetRegistraton.Sample.Data.AccountCustomerSizeCode> CustomerSizeCode
 		{
 			get
 			{
-				return this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("customersizecode");
+				Microsoft.Xrm.Sdk.OptionSetValue optionSet = this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("customersizecode");
+				if ((optionSet != null))
+				{
+					return ((NuGetRegistraton.Sample.Data.AccountCustomerSizeCode)(System.Enum.ToObject(typeof(NuGetRegistraton.Sample.Data.AccountCustomerSizeCode), optionSet.Value)));
+				}
+				else
+				{
+					return null;
+				}
 			}
 			set
 			{
 				this.OnPropertyChanging("CustomerSizeCode");
-				this.SetAttributeValue("customersizecode", value);
+				if ((value == null))
+				{
+					this.SetAttributeValue("customersizecode", null);
+				}
+				else
+				{
+					this.SetAttributeValue("customersizecode", new Microsoft.Xrm.Sdk.OptionSetValue(((int)(value))));
+				}
 				this.OnPropertyChanged("CustomerSizeCode");
 			}
 		}
@@ -1238,16 +3251,31 @@ namespace NuGetRegistraton.Sample.Data
 		/// Select the category that best describes the relationship between the account and your organization.
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("customertypecode")]
-		public Microsoft.Xrm.Sdk.OptionSetValue CustomerTypeCode
+		public System.Nullable<NuGetRegistraton.Sample.Data.AccountCustomerTypeCode> CustomerTypeCode
 		{
 			get
 			{
-				return this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("customertypecode");
+				Microsoft.Xrm.Sdk.OptionSetValue optionSet = this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("customertypecode");
+				if ((optionSet != null))
+				{
+					return ((NuGetRegistraton.Sample.Data.AccountCustomerTypeCode)(System.Enum.ToObject(typeof(NuGetRegistraton.Sample.Data.AccountCustomerTypeCode), optionSet.Value)));
+				}
+				else
+				{
+					return null;
+				}
 			}
 			set
 			{
 				this.OnPropertyChanging("CustomerTypeCode");
-				this.SetAttributeValue("customertypecode", value);
+				if ((value == null))
+				{
+					this.SetAttributeValue("customertypecode", null);
+				}
+				else
+				{
+					this.SetAttributeValue("customertypecode", new Microsoft.Xrm.Sdk.OptionSetValue(((int)(value))));
+				}
 				this.OnPropertyChanged("CustomerTypeCode");
 			}
 		}
@@ -1610,16 +3638,31 @@ namespace NuGetRegistraton.Sample.Data
 		/// Select the account's primary industry for use in marketing segmentation and demographic analysis.
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("industrycode")]
-		public Microsoft.Xrm.Sdk.OptionSetValue IndustryCode
+		public System.Nullable<NuGetRegistraton.Sample.Data.AccountIndustryCode> IndustryCode
 		{
 			get
 			{
-				return this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("industrycode");
+				Microsoft.Xrm.Sdk.OptionSetValue optionSet = this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("industrycode");
+				if ((optionSet != null))
+				{
+					return ((NuGetRegistraton.Sample.Data.AccountIndustryCode)(System.Enum.ToObject(typeof(NuGetRegistraton.Sample.Data.AccountIndustryCode), optionSet.Value)));
+				}
+				else
+				{
+					return null;
+				}
 			}
 			set
 			{
 				this.OnPropertyChanging("IndustryCode");
-				this.SetAttributeValue("industrycode", value);
+				if ((value == null))
+				{
+					this.SetAttributeValue("industrycode", null);
+				}
+				else
+				{
+					this.SetAttributeValue("industrycode", new Microsoft.Xrm.Sdk.OptionSetValue(((int)(value))));
+				}
 				this.OnPropertyChanged("IndustryCode");
 			}
 		}
@@ -1970,16 +4013,31 @@ namespace NuGetRegistraton.Sample.Data
 		/// Select the account's ownership structure, such as public or private.
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("ownershipcode")]
-		public Microsoft.Xrm.Sdk.OptionSetValue OwnershipCode
+		public System.Nullable<NuGetRegistraton.Sample.Data.AccountOwnershipCode> OwnershipCode
 		{
 			get
 			{
-				return this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("ownershipcode");
+				Microsoft.Xrm.Sdk.OptionSetValue optionSet = this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("ownershipcode");
+				if ((optionSet != null))
+				{
+					return ((NuGetRegistraton.Sample.Data.AccountOwnershipCode)(System.Enum.ToObject(typeof(NuGetRegistraton.Sample.Data.AccountOwnershipCode), optionSet.Value)));
+				}
+				else
+				{
+					return null;
+				}
 			}
 			set
 			{
 				this.OnPropertyChanging("OwnershipCode");
-				this.SetAttributeValue("ownershipcode", value);
+				if ((value == null))
+				{
+					this.SetAttributeValue("ownershipcode", null);
+				}
+				else
+				{
+					this.SetAttributeValue("ownershipcode", new Microsoft.Xrm.Sdk.OptionSetValue(((int)(value))));
+				}
 				this.OnPropertyChanged("OwnershipCode");
 			}
 		}
@@ -2060,16 +4118,31 @@ namespace NuGetRegistraton.Sample.Data
 		/// Select the payment terms to indicate when the customer needs to pay the total amount.
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("paymenttermscode")]
-		public Microsoft.Xrm.Sdk.OptionSetValue PaymentTermsCode
+		public System.Nullable<NuGetRegistraton.Sample.Data.AccountPaymentTermsCode> PaymentTermsCode
 		{
 			get
 			{
-				return this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("paymenttermscode");
+				Microsoft.Xrm.Sdk.OptionSetValue optionSet = this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("paymenttermscode");
+				if ((optionSet != null))
+				{
+					return ((NuGetRegistraton.Sample.Data.AccountPaymentTermsCode)(System.Enum.ToObject(typeof(NuGetRegistraton.Sample.Data.AccountPaymentTermsCode), optionSet.Value)));
+				}
+				else
+				{
+					return null;
+				}
 			}
 			set
 			{
 				this.OnPropertyChanging("PaymentTermsCode");
-				this.SetAttributeValue("paymenttermscode", value);
+				if ((value == null))
+				{
+					this.SetAttributeValue("paymenttermscode", null);
+				}
+				else
+				{
+					this.SetAttributeValue("paymenttermscode", new Microsoft.Xrm.Sdk.OptionSetValue(((int)(value))));
+				}
 				this.OnPropertyChanged("PaymentTermsCode");
 			}
 		}
@@ -2078,16 +4151,31 @@ namespace NuGetRegistraton.Sample.Data
 		/// Select the preferred day of the week for service appointments.
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("preferredappointmentdaycode")]
-		public Microsoft.Xrm.Sdk.OptionSetValue PreferredAppointmentDayCode
+		public System.Nullable<NuGetRegistraton.Sample.Data.AccountPreferredAppointmentDayCode> PreferredAppointmentDayCode
 		{
 			get
 			{
-				return this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("preferredappointmentdaycode");
+				Microsoft.Xrm.Sdk.OptionSetValue optionSet = this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("preferredappointmentdaycode");
+				if ((optionSet != null))
+				{
+					return ((NuGetRegistraton.Sample.Data.AccountPreferredAppointmentDayCode)(System.Enum.ToObject(typeof(NuGetRegistraton.Sample.Data.AccountPreferredAppointmentDayCode), optionSet.Value)));
+				}
+				else
+				{
+					return null;
+				}
 			}
 			set
 			{
 				this.OnPropertyChanging("PreferredAppointmentDayCode");
-				this.SetAttributeValue("preferredappointmentdaycode", value);
+				if ((value == null))
+				{
+					this.SetAttributeValue("preferredappointmentdaycode", null);
+				}
+				else
+				{
+					this.SetAttributeValue("preferredappointmentdaycode", new Microsoft.Xrm.Sdk.OptionSetValue(((int)(value))));
+				}
 				this.OnPropertyChanged("PreferredAppointmentDayCode");
 			}
 		}
@@ -2096,16 +4184,31 @@ namespace NuGetRegistraton.Sample.Data
 		/// Select the preferred time of day for service appointments.
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("preferredappointmenttimecode")]
-		public Microsoft.Xrm.Sdk.OptionSetValue PreferredAppointmentTimeCode
+		public System.Nullable<NuGetRegistraton.Sample.Data.AccountPreferredAppointmentTimeCode> PreferredAppointmentTimeCode
 		{
 			get
 			{
-				return this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("preferredappointmenttimecode");
+				Microsoft.Xrm.Sdk.OptionSetValue optionSet = this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("preferredappointmenttimecode");
+				if ((optionSet != null))
+				{
+					return ((NuGetRegistraton.Sample.Data.AccountPreferredAppointmentTimeCode)(System.Enum.ToObject(typeof(NuGetRegistraton.Sample.Data.AccountPreferredAppointmentTimeCode), optionSet.Value)));
+				}
+				else
+				{
+					return null;
+				}
 			}
 			set
 			{
 				this.OnPropertyChanging("PreferredAppointmentTimeCode");
-				this.SetAttributeValue("preferredappointmenttimecode", value);
+				if ((value == null))
+				{
+					this.SetAttributeValue("preferredappointmenttimecode", null);
+				}
+				else
+				{
+					this.SetAttributeValue("preferredappointmenttimecode", new Microsoft.Xrm.Sdk.OptionSetValue(((int)(value))));
+				}
 				this.OnPropertyChanged("PreferredAppointmentTimeCode");
 			}
 		}
@@ -2114,16 +4217,31 @@ namespace NuGetRegistraton.Sample.Data
 		/// Select the preferred method of contact.
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("preferredcontactmethodcode")]
-		public Microsoft.Xrm.Sdk.OptionSetValue PreferredContactMethodCode
+		public System.Nullable<NuGetRegistraton.Sample.Data.AccountPreferredContactMethodCode> PreferredContactMethodCode
 		{
 			get
 			{
-				return this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("preferredcontactmethodcode");
+				Microsoft.Xrm.Sdk.OptionSetValue optionSet = this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("preferredcontactmethodcode");
+				if ((optionSet != null))
+				{
+					return ((NuGetRegistraton.Sample.Data.AccountPreferredContactMethodCode)(System.Enum.ToObject(typeof(NuGetRegistraton.Sample.Data.AccountPreferredContactMethodCode), optionSet.Value)));
+				}
+				else
+				{
+					return null;
+				}
 			}
 			set
 			{
 				this.OnPropertyChanging("PreferredContactMethodCode");
-				this.SetAttributeValue("preferredcontactmethodcode", value);
+				if ((value == null))
+				{
+					this.SetAttributeValue("preferredcontactmethodcode", null);
+				}
+				else
+				{
+					this.SetAttributeValue("preferredcontactmethodcode", new Microsoft.Xrm.Sdk.OptionSetValue(((int)(value))));
+				}
 				this.OnPropertyChanged("PreferredContactMethodCode");
 			}
 		}
@@ -2306,16 +4424,31 @@ namespace NuGetRegistraton.Sample.Data
 		/// Select a shipping method for deliveries sent to the account's address to designate the preferred carrier or other delivery option.
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("shippingmethodcode")]
-		public Microsoft.Xrm.Sdk.OptionSetValue ShippingMethodCode
+		public System.Nullable<NuGetRegistraton.Sample.Data.AccountShippingMethodCode> ShippingMethodCode
 		{
 			get
 			{
-				return this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("shippingmethodcode");
+				Microsoft.Xrm.Sdk.OptionSetValue optionSet = this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("shippingmethodcode");
+				if ((optionSet != null))
+				{
+					return ((NuGetRegistraton.Sample.Data.AccountShippingMethodCode)(System.Enum.ToObject(typeof(NuGetRegistraton.Sample.Data.AccountShippingMethodCode), optionSet.Value)));
+				}
+				else
+				{
+					return null;
+				}
 			}
 			set
 			{
 				this.OnPropertyChanging("ShippingMethodCode");
-				this.SetAttributeValue("shippingmethodcode", value);
+				if ((value == null))
+				{
+					this.SetAttributeValue("shippingmethodcode", null);
+				}
+				else
+				{
+					this.SetAttributeValue("shippingmethodcode", new Microsoft.Xrm.Sdk.OptionSetValue(((int)(value))));
+				}
 				this.OnPropertyChanged("ShippingMethodCode");
 			}
 		}
@@ -2513,16 +4646,31 @@ namespace NuGetRegistraton.Sample.Data
 		/// Select a region or territory for the account for use in segmentation and analysis.
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("territorycode")]
-		public Microsoft.Xrm.Sdk.OptionSetValue TerritoryCode
+		public System.Nullable<NuGetRegistraton.Sample.Data.AccountTerritoryCode> TerritoryCode
 		{
 			get
 			{
-				return this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("territorycode");
+				Microsoft.Xrm.Sdk.OptionSetValue optionSet = this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("territorycode");
+				if ((optionSet != null))
+				{
+					return ((NuGetRegistraton.Sample.Data.AccountTerritoryCode)(System.Enum.ToObject(typeof(NuGetRegistraton.Sample.Data.AccountTerritoryCode), optionSet.Value)));
+				}
+				else
+				{
+					return null;
+				}
 			}
 			set
 			{
 				this.OnPropertyChanging("TerritoryCode");
-				this.SetAttributeValue("territorycode", value);
+				if ((value == null))
+				{
+					this.SetAttributeValue("territorycode", null);
+				}
+				else
+				{
+					this.SetAttributeValue("territorycode", new Microsoft.Xrm.Sdk.OptionSetValue(((int)(value))));
+				}
 				this.OnPropertyChanged("TerritoryCode");
 			}
 		}
@@ -4062,6 +6210,39 @@ namespace NuGetRegistraton.Sample.Data
 	
 	[System.Runtime.Serialization.DataContractAttribute()]
 	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum OpportunityOpportunityRatingCode
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Hot = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Warm = 2,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Cold = 3,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum OpportunityPriorityCode
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		DefaultValue = 1,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum OpportunitySalesStageCode
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		DefaultValue = 1,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
 	public enum OpportunityState
 	{
 		
@@ -4073,6 +6254,27 @@ namespace NuGetRegistraton.Sample.Data
 		
 		[System.Runtime.Serialization.EnumMemberAttribute()]
 		Lost = 2,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum OpportunityTimeLine
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Immediate = 0,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		ThisQuarter = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		NextQuarter = 2,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		ThisYear = 3,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Notknown = 4,
 	}
 	
 	/// <summary>
@@ -4951,16 +7153,31 @@ namespace NuGetRegistraton.Sample.Data
 		/// Select the expected value or priority of the opportunity based on revenue, customer status, or closing probability.
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("opportunityratingcode")]
-		public Microsoft.Xrm.Sdk.OptionSetValue OpportunityRatingCode
+		public System.Nullable<NuGetRegistraton.Sample.Data.OpportunityOpportunityRatingCode> OpportunityRatingCode
 		{
 			get
 			{
-				return this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("opportunityratingcode");
+				Microsoft.Xrm.Sdk.OptionSetValue optionSet = this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("opportunityratingcode");
+				if ((optionSet != null))
+				{
+					return ((NuGetRegistraton.Sample.Data.OpportunityOpportunityRatingCode)(System.Enum.ToObject(typeof(NuGetRegistraton.Sample.Data.OpportunityOpportunityRatingCode), optionSet.Value)));
+				}
+				else
+				{
+					return null;
+				}
 			}
 			set
 			{
 				this.OnPropertyChanging("OpportunityRatingCode");
-				this.SetAttributeValue("opportunityratingcode", value);
+				if ((value == null))
+				{
+					this.SetAttributeValue("opportunityratingcode", null);
+				}
+				else
+				{
+					this.SetAttributeValue("opportunityratingcode", new Microsoft.Xrm.Sdk.OptionSetValue(((int)(value))));
+				}
 				this.OnPropertyChanged("OpportunityRatingCode");
 			}
 		}
@@ -5185,16 +7402,31 @@ namespace NuGetRegistraton.Sample.Data
 		/// Select the priority so that preferred customers or critical issues are handled quickly.
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("prioritycode")]
-		public Microsoft.Xrm.Sdk.OptionSetValue PriorityCode
+		public System.Nullable<NuGetRegistraton.Sample.Data.OpportunityPriorityCode> PriorityCode
 		{
 			get
 			{
-				return this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("prioritycode");
+				Microsoft.Xrm.Sdk.OptionSetValue optionSet = this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("prioritycode");
+				if ((optionSet != null))
+				{
+					return ((NuGetRegistraton.Sample.Data.OpportunityPriorityCode)(System.Enum.ToObject(typeof(NuGetRegistraton.Sample.Data.OpportunityPriorityCode), optionSet.Value)));
+				}
+				else
+				{
+					return null;
+				}
 			}
 			set
 			{
 				this.OnPropertyChanging("PriorityCode");
-				this.SetAttributeValue("prioritycode", value);
+				if ((value == null))
+				{
+					this.SetAttributeValue("prioritycode", null);
+				}
+				else
+				{
+					this.SetAttributeValue("prioritycode", new Microsoft.Xrm.Sdk.OptionSetValue(((int)(value))));
+				}
 				this.OnPropertyChanged("PriorityCode");
 			}
 		}
@@ -5365,16 +7597,31 @@ namespace NuGetRegistraton.Sample.Data
 		/// Select the sales process stage for the opportunity to indicate the probability of closing the opportunity.
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("salesstagecode")]
-		public Microsoft.Xrm.Sdk.OptionSetValue SalesStageCode
+		public System.Nullable<NuGetRegistraton.Sample.Data.OpportunitySalesStageCode> SalesStageCode
 		{
 			get
 			{
-				return this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("salesstagecode");
+				Microsoft.Xrm.Sdk.OptionSetValue optionSet = this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("salesstagecode");
+				if ((optionSet != null))
+				{
+					return ((NuGetRegistraton.Sample.Data.OpportunitySalesStageCode)(System.Enum.ToObject(typeof(NuGetRegistraton.Sample.Data.OpportunitySalesStageCode), optionSet.Value)));
+				}
+				else
+				{
+					return null;
+				}
 			}
 			set
 			{
 				this.OnPropertyChanging("SalesStageCode");
-				this.SetAttributeValue("salesstagecode", value);
+				if ((value == null))
+				{
+					this.SetAttributeValue("salesstagecode", null);
+				}
+				else
+				{
+					this.SetAttributeValue("salesstagecode", new Microsoft.Xrm.Sdk.OptionSetValue(((int)(value))));
+				}
 				this.OnPropertyChanged("SalesStageCode");
 			}
 		}
@@ -5590,16 +7837,31 @@ namespace NuGetRegistraton.Sample.Data
 		/// Select when the opportunity is likely to be closed.
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("timeline")]
-		public Microsoft.Xrm.Sdk.OptionSetValue TimeLine
+		public System.Nullable<NuGetRegistraton.Sample.Data.OpportunityTimeLine> TimeLine
 		{
 			get
 			{
-				return this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("timeline");
+				Microsoft.Xrm.Sdk.OptionSetValue optionSet = this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("timeline");
+				if ((optionSet != null))
+				{
+					return ((NuGetRegistraton.Sample.Data.OpportunityTimeLine)(System.Enum.ToObject(typeof(NuGetRegistraton.Sample.Data.OpportunityTimeLine), optionSet.Value)));
+				}
+				else
+				{
+					return null;
+				}
 			}
 			set
 			{
 				this.OnPropertyChanging("TimeLine");
-				this.SetAttributeValue("timeline", value);
+				if ((value == null))
+				{
+					this.SetAttributeValue("timeline", null);
+				}
+				else
+				{
+					this.SetAttributeValue("timeline", new Microsoft.Xrm.Sdk.OptionSetValue(((int)(value))));
+				}
 				this.OnPropertyChanged("TimeLine");
 			}
 		}
@@ -6892,6 +9154,21 @@ namespace NuGetRegistraton.Sample.Data
 		}
 	}
 	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "8.2.1.8676")]
+	public enum OpportunityProductOpportunityStateCode
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Open = 0,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Won = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Lost = 2,
+	}
+	
 	/// <summary>
 	/// Association between an opportunity and a product.
 	/// </summary>
@@ -7312,11 +9589,19 @@ namespace NuGetRegistraton.Sample.Data
 		/// Select the status of the opportunity product.
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("opportunitystatecode")]
-		public Microsoft.Xrm.Sdk.OptionSetValue OpportunityStateCode
+		public System.Nullable<NuGetRegistraton.Sample.Data.OpportunityProductOpportunityStateCode> OpportunityStateCode
 		{
 			get
 			{
-				return this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("opportunitystatecode");
+				Microsoft.Xrm.Sdk.OptionSetValue optionSet = this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("opportunitystatecode");
+				if ((optionSet != null))
+				{
+					return ((NuGetRegistraton.Sample.Data.OpportunityProductOpportunityStateCode)(System.Enum.ToObject(typeof(NuGetRegistraton.Sample.Data.OpportunityProductOpportunityStateCode), optionSet.Value)));
+				}
+				else
+				{
+					return null;
+				}
 			}
 		}
 		
